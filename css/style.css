@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .contentBox, .contentBoxSp,
+  .contentBoxM, .contentBoxMSp,
+  .contentBoxL, .contentBoxLSp {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentBox, .contentBoxPc {
+    width: 1240px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .contentBoxM, .contentBoxMPc {
+    width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .contentBoxL, .contentBoxLPc {
+    width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentTitle {
+    text-align: center;
+  }
+}
+
+.contentTitleMain {
+  color: #333;
+  display: inline-block;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 767px) {
+  .contentTitleMain {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentTitleMain {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .solution .contentTitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .solution .contentTitleMain {
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .solution .contentTitleMain.illustOwl {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentTitleMain.illustOwl {
+    padding-left: 54px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentTitleMain.illustOwl {
+    padding-left: 95px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentTitleMain.illustOwl:before {
+    left: 0;
+    width: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentTitleMain.illustOwl:before {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile .work .skill .contact  {
+    padding: 40px 0 40px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile .work .skill .contact {
+    padding: 111px 0 120px 0;
+  }
+}
+
+.profile-icon {
+  width: 28%;
+}
+
+.profile-content {
+  width: 72%;
+  padding: 0px 8px;
+  line-height: 180%;
+}
+
+.pull-left {
+  float: left;
+  box-sizing: border-box;
+}
+
+.subsection {
+  margin-bottom: 32px;
+}
+
+.icon img {
+  height: 40px;
+  width: 40px;
+}
+
+#nav ul li{
+  display: inline;
+  text-align: center;
+} 
+
+@media screen and (max-width: 767px) {
+  .contentTitleMain.illustOwl.profile:before
+  .contentTitleMain.illustOwl.work:before
+  .contentTitleMain.illustOwl.skill:before
+  .contentTitleMain.illustOwl.contact:before
+  {
+    height: 53.95px;
+    top: calc(50% - calc(53.95px / 2));
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentTitleMain.illustOwl.profile:before
+  .contentTitleMain.illustOwl.work:before
+  .contentTitleMain.illustOwl.skill:before
+  .contentTitleMain.illustOwl.contact:before
+  {
+    height: 88.9px;
+    top: calc(50% - calc(88.9px / 2));
+    width: 65.9px;
+  }
+}
+
+.copyYear {
+  background-color: #333;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .copyYear {
+    font-size: textMSp;
+    letter-spacing: 0.14em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .copyYear {
+    font-size: textMPc;
+    letter-spacing: 0.05em;
+  }
+}
